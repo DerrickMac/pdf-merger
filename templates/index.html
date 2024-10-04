@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Merger</h1>
+        
+        <!-- Drag and Drop Area -->
+        <div id="dropZone" class="drop-zone">
+            <form class="my-form">
+                <p>Drag and drop PDFs here or</p>
+                <button type="button" id="addPdfButton">Add PDF</button>
+                <input type="file" id="fileInput" name="pdfs" accept="application/pdf" multiple hidden>
+            </form>
+        </div>
+        
+        <!-- Selected Files List -->
+        <div id="fileList"></div>
+        
+        <!-- Merge Button -->
+        <button type="button" id="mergeButton">Merge PDFs</button>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

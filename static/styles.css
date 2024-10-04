@@ -1,0 +1,124 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.drop-zone {
+    border: 2px dashed #6c757d;
+    border-radius: 10px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.drop-zone.dragover {
+    background-color: #e9ecef;
+    border-color: #495057;
+}
+
+.drop-zone p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+#addPdfButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addPdfButton:hover {
+    background-color: #0056b3;
+}
+
+.file-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.file-item .file-name {
+    color: #495057;
+}
+
+.file-item .remove-button {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.file-item .remove-button:hover {
+    color: #a71d2a;
+}
+
+.merge-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.merge-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.merge-button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.download-link {
+    margin-top: 30px;
+}
+
+.download-link a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #17a2b8;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-link a:hover {
+    background-color: #117a8b;
+}
